@@ -1,0 +1,52 @@
+:root{
+  --blue:#3b5998;
+  --table-border:#2b6aa3;
+}
+
+body{
+  font-family:"Segoe UI", Arial, sans-serif;
+  margin:40px;
+  background:#f9f9ff;
+  color:#222;
+}
+
+h2{margin-bottom:12px;}
+
+.list-table {
+  width: 600px;
+  border-collapse: collapse;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+.list-table th, .list-table td{
+  border:1px solid #bcd0f0;
+  padding:10px 12px;
+  vertical-align: middle;
+  background:white;
+}
+.list-table thead th{
+  background: linear-gradient(#f3f7ff,#eaf2ff);
+  color:#0b2340;
+  font-weight:700;
+  text-align:left;
+  border-bottom:2px solid var(--table-border);
+}
+.list-table tbody td:nth-child(1){
+  width:48px;
+  text-align:center;
+  font-weight:600;
+}
+.list-table tbody td:nth-child(4),
+.list-table tbody td:nth-child(5){
+  text-align:center;
+}
+.list-table tfoot td{
+  background:var(--blue);
+  color:white;
+  font-weight:700;
+  padding:12px;
+  border: none;
+}
+.list-table tfoot td.right{
+  text-align:right;
+  padding-right:18px;
+}
